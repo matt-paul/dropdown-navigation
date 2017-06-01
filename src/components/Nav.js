@@ -12,7 +12,7 @@ function Nav(props) {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
 export default styled(Nav)`

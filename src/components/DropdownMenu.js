@@ -5,7 +5,7 @@ function DropdownMenu(props) {
   return (
     <div className={props.className}>
       <ul className="dropdown">
-        { props.data.map(item => {
+        {props.data.map(item => {
           const { classNames, icon, altText, title, href } = item;
           return (
             <li key={title} className={classNames}>
@@ -14,18 +14,18 @@ function DropdownMenu(props) {
                 <span>{title}</span>
               </a>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
-  )
+  );
 }
 
 export default styled(DropdownMenu)`
   .dropdown {
     position: absolute;
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     transition: visibility 0.5s;
     list-style: none;
     margin: 0;
@@ -41,11 +41,12 @@ export default styled(DropdownMenu)`
   .dropdown__item {
     cursor: pointer;
     text-align: left;
-    padding: 8px 16px;
     line-height: 24px;
     font-size: 14px;
     a {
+      margin: 8px 16px;
       text-decoration: none ;
+      display: block;
       img {
         margin-right: 12px;
         vertical-align: -24%;
@@ -60,7 +61,9 @@ export default styled(DropdownMenu)`
   }
 
   .dropdown__item--large {
-    padding: 16px;
     border-bottom: 1px solid #ededee;
+    a {
+      margin: 16px;
+    }
   }
 `;
