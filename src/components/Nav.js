@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import DropdownMenu from './DropdownMenu';
+import { menuData } from '../menuData';
 
 function Nav(props) {
   return (
     <nav className={props.className}>
       <ul>
         <li tabIndex="0" className="nav-item user-options">NT
-          <DropdownMenu />
+          <DropdownMenu data={menuData} />
         </li>
       </ul>
     </nav>

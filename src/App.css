@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-* {
+/** {
   outline: 1px solid red;
-}
+}*/
 
 ul {
   list-style: none;
