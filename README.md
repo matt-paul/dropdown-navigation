@@ -21,3 +21,8 @@ npm start
 ### Further work
 
 If i had more than two hours, I would fine tune the styling of the component, as perhaps the disadvantage of my approach was that I brought react into it, which adds time.  If it was on a site that I knew to be static, and the menu component was not going to be reused, I would not bring react into it at all.
+
+### Bug
+
+I have just found out, having tested fine as I worked on it in Chrome and Firefox, that the menu is buggy in Safari, and does not close when an item is
+clicked.  I am looking into exactly why this is happening, and what makes Safari different in this respect, so hopefully a good learning experience!
